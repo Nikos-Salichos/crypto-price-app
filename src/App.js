@@ -20,9 +20,10 @@ function App() {
     <div className="App">
       <div className='cryptoHeader'>
         <input type="text"
-          placeholder="Search..."
+          placeholder="Search your coin!"
           onChange={e => { setSearchWord(e.target.value) }}></input>
       </div>
+
       <div className='cryptoDisplay'>{filteredCoins.map(coin => {
         return (<Coin
           key={coin.symbol}
